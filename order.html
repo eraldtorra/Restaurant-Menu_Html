@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Gourmet Bistro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #header-img {
+            width: 100%;
+            height: 200px;
+            object-fit: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 60px;
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        form {
+            line-height: normal;
+        }
+
+
+        form {
+            text-align: center;
+        }
+
+        
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="image/image.avif" alt="The Gourmet Bistro">
+        <h1>The Gourmet Bistro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="checkout.html" method="post">
+               <b> <label for="spaghetti">Spaghetti Bolognese Quantity:</label></b>
+                <input type="number"  name="spaghetti" min="0" value="0">
+
+                <b><label for="salad">Caesar Salad Quantity:</label></b>
+                <input type="number"  name="salad" min="0" value="0">
+
+                <b><label for="cake">Chocolate Cake Quantity:</label></b>
+                <input type="number"  name="cake" min="0" value="0">
+
+               <b> <label>Add-ons:</label></b>
+                <input type="checkbox"  name="addons" value="Extra Cheese">
+              <b><label for="extra_cheese">Extra Cheese</label></b>
+                <input type="checkbox"  name="addons" value="Garlic Bread">
+              <b> <label for="garlic_bread">Garlic Bread</label></b>
+
+                <label for="special-requests">Special Requests:</label>
+                <textarea  name="special_requests" rows="4" placeholder="Enter any special requests here..."></textarea>
+                <br>
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+  
+    <footer>
+        <p>Made with love by Eraldtorra56092</p>
+    </footer>
+</body>
+</html>
